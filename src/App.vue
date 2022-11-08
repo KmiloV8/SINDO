@@ -1,6 +1,8 @@
 <template>
   <v-app>
     <v-main>
+      
+
       <MenuAll/>
       
     </v-main>
@@ -18,12 +20,13 @@ export default {
 
   components: {
     MenuAll,
-
-
   },
 
-  data: () => ({
+  data:()=> ({
     //
   }),
 };
 </script>
+
+
+
