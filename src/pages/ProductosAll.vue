@@ -167,6 +167,24 @@
                     </div>
                 </div> <!--.row-->
         </div>
+<hr>
+       
+            <div class="contenedor">
+                <div class="nav-footer">
+                    <h1 class="titulo-footer">footer</h1>
+                    <nav class="menu">
+                        <a>RESTAURANTE EL BUEN SABOR</a>
+                        <a>restauranteelbuensabor@gnail.com</a>
+                        <a>Doña Elisabeth y Don Israel</a>
+                        <a>(607)6313514</a>
+                        <a>calle 12# 11-08</a>
+                    </nav>
+                </div>
+            </div>
+      
+
+
+    
     </v-app>
 </template>
 
@@ -358,4 +376,83 @@ h1 {
 .info-card .precio span {
     font-weight: 700;
     font-size: 22px;
-}</style>
+}
+
+/** Footer */
+
+footer,
+nav,
+menu{
+    display: block;
+}
+.footer {
+    background-color: var(--claro);
+    border-top: 1px solid var(--obscuro);
+    position: fixed;
+    bottom:-100%;
+    transition: all 0.25s ease-in;
+    width: 100%;
+    padding: 20px 0 0 0;
+    background: #b57c00; /* Old browsers */
+    background: -moz-linear-gradient(left, #b57c00 0%, #f7d547 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #b57c00 0%,#f7d547 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #b57c00 0%,#f7d547 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b57c00', endColorstr='#f7d547',GradientType=1 ); /* IE6-9 */  
+    -webkit-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    padding: 3rem 0;
+}
+
+.footer .contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+    grid-gap: 1rem;
+}
+.footer .nav-footer {
+    padding: 1rem;
+}
+.footer .nav-footer h3 {
+    font-size: 1.2rem;
+}
+.footer .menu a{
+    background-color: #222;
+    text-decoration: none;
+    display: block;
+    padding-top: .5rem;
+    margin: 10px;
+}
+
+a{
+    color: black; 
+    text-align: center;
+  }
+  a:hover {
+    color: white;  
+  }
+  
+  .titulo-footer{
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  h1 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
