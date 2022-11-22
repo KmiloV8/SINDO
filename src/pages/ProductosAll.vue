@@ -195,7 +195,16 @@ export default{
 </script>
 
 <style>
+
+#productos{
+    background-color: rgb(248, 238, 211);
+}
 h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
     text-align: center;
 }
 .container:after,
@@ -380,19 +389,15 @@ h1 {
 
 /** Footer */
 
-footer,
-nav,
-menu{
-    display: block;
+
+.menu{
+    text-align: center;
 }
 .footer {
     background-color: var(--claro);
     border-top: 1px solid var(--obscuro);
-    position: fixed;
-    bottom:-100%;
-    transition: all 0.25s ease-in;
     width: 100%;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     background: #b57c00; /* Old browsers */
     background: -moz-linear-gradient(left, #b57c00 0%, #f7d547 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #b57c00 0%,#f7d547 100%); /* Chrome10-25,Safari5.1-6 */
@@ -401,58 +406,13 @@ menu{
     -webkit-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
     -moz-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
     box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
-    padding: 3rem 0;
 }
 
-.footer .contenedor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
-    grid-gap: 1rem;
-}
-.footer .nav-footer {
-    padding: 1rem;
-}
-.footer .nav-footer h3 {
-    font-size: 1.2rem;
-}
-.footer .menu a{
-    background-color: #222;
+.footer .menu a:hover{
+    color: white;
     text-decoration: none;
-    display: block;
-    padding-top: .5rem;
-    margin: 10px;
+    padding-top: 1px;
+    margin: 1px;
+    font-size: 15px;
 }
-
-a{
-    color: black; 
-    text-align: center;
-  }
-  a:hover {
-    color: white;  
-  }
-  
-  .titulo-footer{
-    font-size: 100%;
-    font-weight: bolder;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
-
-  h1 {
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-</style>
+</style> 

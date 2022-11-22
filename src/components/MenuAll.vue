@@ -1,8 +1,7 @@
 <template>
-    <v-card
-    class="mx-auto overflow-hidden"
-    height="400"
-  >
+<div>
+
+
     <v-app-bar
       color="primary"
       dark
@@ -45,10 +44,19 @@
             </v-list-item-icon>
             <v-list-item-title>Sobre Nosotros</v-list-item-title>
           </v-list-item>
+
+          <v-list-item :to="'/formulario'">
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>formulario
+            </v-list-item-title>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-  </v-card>
+  </div>
+  
 </template>
 
 <script>
