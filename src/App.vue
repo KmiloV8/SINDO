@@ -3,6 +3,7 @@
     <v-main>
       <MenuAll/>
       <HeaderAll/>
+   <!--  <FormData/> -->
       <router-view></router-view>
     </v-main>
    
@@ -12,6 +13,7 @@
 <script>
 import MenuAll from './components/MenuAll';
 import HeaderAll from './components/HeaderAll';
+/* import FormData from './pages/FormData.vue'; */
 
 
 
@@ -22,7 +24,8 @@ export default {
   components: {
     HeaderAll,
     MenuAll,
-  },
+    /* FormData */
+},
 
   data:()=> ({
     //

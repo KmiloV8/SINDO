@@ -194,7 +194,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
 
 #productos{
     background-color: rgb(248, 238, 211);
@@ -323,7 +323,7 @@ h2{
         font-family: italic;
         font-size: 20px;
         margin: 30px 0;
-    }
+    } 
 #lista-cursos .row {
     margin-bottom:20px;
 }

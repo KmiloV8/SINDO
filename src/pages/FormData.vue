@@ -1,17 +1,19 @@
 <template>
-  <div>
-    <v-app>
+  <div class="fondo">
+    <v-main>
+      
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>PRUEBA LOGIN</title>
     </head>
+    <body>
 
     <div class="divlogin" style="width: 35rem">
       <div class="container">
-        <div class="divcont">
-            <h5 class="card-title">Datos Usuario</h5>
+        
+           
 
             <div class="form-group">
               <label for="formGroupExampleInput">usuario</label>
@@ -26,10 +28,11 @@
             <button class="btn btn-primary" @click="addPersona">
               A&ntilde;adir
         </button>
-      </div>
+      
       </div>
     </div>
-  </v-app>
+  </body>
+  </v-main>
   </div>
 
 </template>
@@ -68,76 +71,91 @@ export default {
 
     return{usuario, password, addPersona}
   }
-  // data() {
-  //   return {
-  //     nombre: "",
-  //     email: "",
-  //     aporte: "",
-  //   };
-  // },
-  // methods: {
-  //   addPersona() {
-  //     if (this.nombre != "" && this.email != "") {
-  //       const persona = {
-  //         nombre: this.nombre,
-  //         email: this.email,
-  //         aporte: this.aporte,
-  //       };
-  //       this.$store.dispatch("addPersona", persona);
-  //       this.$router.push('/print')
-  //     }
-  //   },
-  // },
+  
 };
 </script>
 
-<style>
+<style scoped>
+
+.fondo {
+  background-image:url('../assets/fondo.png');
+  width: 100;
+  height: 100;
+
+}
+html,body{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  color: #222;
+}
+
+
 .divlogin{
-  /*background: url(../assets/fondo.png) no-repeat;*/
   background-size: center center;
   width: 100%;
   height: 100vh;
   display: flex;
   align-content: center;
   align-items: center;
+  margin: auto;
+  
 }
 .divlogin .container{
   width: 100%;
   text-align: center;
+  
 }
 
-.divlogin .container .divcont{
+.divlogin .container {
+  border: 10px;
+  border-color: #222;
   width: 100%;
   max-width: 300px;
-  background: rgb(206, 204, 204);
+  background: rgb(185, 185, 185);
   padding: 20px;
   border-radius: 10px;
   display: inline-block;
+  margin: auto;
+  border: solid;
+  border-color: #222;
+
+
 }
 
-.divlogin .container .divcont h3{
+.divlogin .container  h3{
   margin-top: 0px;
+
 }
 
-.divlogin .container .divcont input{
+.divlogin .container input{
   height: 30px;
   margin: 0px;
-  border: 0px;
+  border: 10px;
   outline: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 90%;
   margin-bottom: 10px;
+  border: dashed; 
+  border-color: rgb(70, 67, 67);
 }
 
-.divlogin .container .divcont button{
+.divlogin .container button{
   margin: 0px;
-  border: 0px;
+  border: 90px;
   display: block;
   margin: auto;
   padding: 10px 30px;
-  background: rgb(92, 90, 90);
+  background: rgb(150, 83, 226);
   color: white;
   border-radius: 10px;
+  border: groove; 
+  border-color: #222;
+}
+
+.btn-primary{
+  border: 10px;
 }
 </style>

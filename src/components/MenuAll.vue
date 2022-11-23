@@ -24,6 +24,13 @@
           v-model="group"
           active-class="secundary--text text--accent-4"
         >
+        <v-list-item :to="'/formulario'">
+          <v-list-item-icon>
+            <v-icon>mdi-account</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>formulario
+          </v-list-item-title>
+        </v-list-item>
           <v-list-item :to="'/home'">
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
@@ -45,13 +52,8 @@
             <v-list-item-title>Sobre Nosotros</v-list-item-title>
           </v-list-item>
 
-          <v-list-item :to="'/formulario'">
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>formulario
-            </v-list-item-title>
-          </v-list-item>
+          
+          
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
